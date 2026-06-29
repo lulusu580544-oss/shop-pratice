@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電商網站</title>
+
+
+    <!-- 自訂的css一定要放在最下面，因為權重要最重 -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+    <!-- 頁首區 -->
+    <header id="navbar">
+        <!-- 導覽列 -->
+        <div class="toper">
+            <!-- 漢堡按鈕 -->
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <div class="logo">
+                <a href="#">
+                    MELLOW HOME
+                </a>
+                <span>暖煦家居</span>
+            </div>
+            <nav class="navigation">
+                <!-- 電腦版選單 -->
+                <ul class="menu">
+                    <!--#加id名稱=點擊跳到指定位置，又稱錨點超聯結-->
+                    <li><a href="#about">品牌理念</a></li>
+                    <li><a href="#products">熱銷商品</a></li>
+                    <li><a href="#bundle">自由配特惠</a></li>
+                    <li><a href="#question">常見問題</a></li>
+                </ul>
+            </nav>
+            <!-- 右側功能按鈕 -->
+            <div class="but">
+                <a href="#">立即搶購</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 首頁主視覺區 -->
+        <section id="about">
+            <div class="intro">
+                <!-- 左側:標題文字 -->
+                <div class="title">
+                    <span class="text-1">
+                        NEW ARRIVAL | 2026 暖冬新品
+                    </span>
+                    <h1 class="text-main">
+                        用一只抱枕，<br>
+                        <span class="text-main-small">微溫</span>你的日常生活。
+                    </h1>
+                    <p class="text-3">
+                        我們相信，家中的每一樣物件，都承載著生活的溫度。Mellow Home
+                        <br>精選天然材質與簡約北歐設計，為你的起居空間注入剛剛好的暖意。
+                    </p>
+                    <div class="title-text-btn">
+                        <!-- CTA 按鈕 1：亮眼主按鈕，包含 hover 放大與閃爍特效 -->
+                        <a href="#bundle" class="btn1">
+                            選購限定加購組
+                        </a>
+                        <!-- CTA 按鈕 2：低調外框按鈕 -->
+                        <a href="#products" class="btn2">
+                            瀏覽所有單品
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 右側：大圖呈現，使用美觀的樣機框感 -->
+                <div class="banner-img">
+                    <figure class="img-left"><img class="hero-image" src="./images/banner-1.jpg" alt="溫馨居家客廳"></figure>
+                    <!-- 左下角浮動小標籤 -->
+                    <div class="banner-text">
+                        <p class="text-s ">主打人氣單品</p>
+                        <p class="text-sm ">針織雲朵抱枕</p>
+                        <p class="text-xs ">NT$ 880 起</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 品牌特色 -->
+        <section id="products">
+            <div class="products-all">
+                <div class="products-title smoove">
+                    <h2>為什麼選擇Mellow Home？</h2>
+                    <p>每一個小細節，都是我們對手作與生活質感的堅持。</p>
+                </div>
+                <div class="list-box smoove">
+                    <div class="box1">
+                        <figure><img src="./images/circle1.png"></figure>
+                        <p>手工匠心製程</p>
+                        <span>所有抱枕與編織單品，均由資深職人經 24 道工序純手工縫製，拒絕冰冷的機器量產。</ㄋ>
+                    </div>
+                    <div class="box2 smoove">
+                        <figure><img src="./images/circle2.png"></figure>
+                        <p>100% 無毒天然材質</p>
+                        <span>選用有機棉花與植物提煉的天然染料，通過無毒安全認證，嬰兒與寵物皆可安心親密接觸。</span>
+                    </div>
+                    <div class="box3 smoove">
+                        <figure><img src="./images/circle3.png"></figure>
+                        <p>極簡北歐美學</p>
+                        <span>以莫蘭迪暖調配色為核心，能輕鬆融入各種日式、北歐或現代室內設計風格。</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 熱銷商品展示 -->
+        <section id="bundle">
+            <!--區塊標題區-->
+            <header class="title smoove">
+                <h3>熱銷人氣單品推薦</h3>
+                <p>最受歡迎的居家選物，用親民的價格升級生活儀式感。</ㄟ>
+            </header>
+            <!-- 列表區 -->
+            <div class="bundle-box">
+                <!--article用於文章或列表，seo更加分，預設為display:block-水平排滿版-->
+                <article class="item smoove">
+                    <a href="#">
+                        <!--上面圖片(可做到裁減或控制圖片的效果，不建議直接用img排版-->
+                        <figure><img src="./images/budle1.jpg"></figure>
+                        <p class="pic-text">HOT</p>
+                        <!--下面文字-->
+                        <div class="content">
+                            <h2 class="text-title">經典針織雲朵抱枕</h2>
+                            <span>材質：100% 有機精梳棉 / 蓬鬆高彈力羽絲絨</span>
+                            <p>像雲朵般軟綿的觸感，無論放在沙發或床頭，都能提供最溫柔的依靠。 </p>
+                        </div>
+                        <div class="money1">
+                            <span>NT$ 880</span>
+                            <a href="#" class="money-text">看優惠組合</a>
+                        </div>
+                    </a>
+                </article>
+                <article class="item smoove">
+                    <a href="#">
+                        <!--上面圖片(可做到裁減或控制圖片的效果，不建議直接用img排版-->
+                        <figure><img src="./images/budle2 .jpg"></figure>
+                        <p class="pic-text">POPULAR</p>
+                        <!--下面文字-->
+                        <div class="content">
+                            <h2>霧面磨砂陶瓷香氛機</h2>
+                            <span>材質：手工燒製陶瓷 / 二段式超音波細緻微霧</span>
+                            <p>極靜音設計，伴隨溫潤的微光與淡雅香香，陪伴你進入深沉睡眠。</p>
+                        </div>
+                        <div class="money2">
+                            <span>NT$ 1,280</span>
+                            <a href="#" class="money-text">看優惠組合</a>
+                        </div>
+                    </a>
+                </article>
+                <article class="item smoove">
+                    <a href="#">
+                        <!--上面圖片(可做到裁減或控制圖片的效果，不建議直接用img排版-->
+                        <figure><img src="./images/budle3.jpg"></figure>
+                        <p class="pic-text">NEW</p>
+                        <!--下面文字-->
+                        <div class="content">
+                            <h2 class="text-title">暖木藤編氛圍桌燈</h2>
+                            <span>材質：北美梣木底座 / 天然印尼藤條手工編織</span>
+                            <p>透光溫和不刺眼，天然藤編在牆上投射出唯美光影，溫暖房內每個角落。</p>
+                        </div>
+                        <div class="money3">
+                            <span>NT$ 1,580</span>
+                            <a href="#" class="money-text">看優惠組合</a>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- 自由配價格計算器 -->
+        <section id="price">
+            <div class="price-title">
+                <div class="title4 smoove">
+                    <span>期間限定特惠</span>
+                    <h4>居家質感自由配</h4>
+                    <p>先選取基本款抱枕，再自由加購配件，系統將為你自動計算最低折扣總價！</p>
+                </div>
+
+                <!-- 自由配主版面 -->
+                <div class="price-count">
+                    <!-- 左半部：加購商品複選區 (8個柵格) -->
+                    <div class="price-count-left smoove">
+
+                        <h3>第一步：選擇你想加購的精美小物</h3>
+
+                        <!-- 基本款 (固定要選) -->
+                        <div class="count-base">
+                            <div class="count-base-text">
+                                <p>【必選基本款】針織雲朵抱枕</p>
+                                <span>人氣NO.1 暖冬針織手感</span>
+                            </div>
+                            <span class="count-base-text-span">NT$ 880</span>
+                        </div>
+
+                        <!-- 加購選單區 -->
+                        <div class="count-add">
+                            <!-- 加購選項 A -->
+                            <label class="count-add1">
+                                <div class="count-add1-base">
+                                    <!-- 勾選框：觸發 JS 進行即時價格運算 -->
+                                    <input type="checkbox" onchange="calculatePrice()" value="399"
+                                        class="count-add1-base-input" data-name="天然薰衣草枕頭噴霧">
+                                    <div>
+                                        <p class="count-add1-base-text1">加購：天然薰衣草安眠噴霧</p>
+                                        <p class="count-add1-base-text2">幫助深度放鬆 50ml</p>
+                                    </div>
+                                </div>
+                                <span>+ NT$ 399</span>
+                            </label>
+
+                            <!-- 加購選項 B -->
+                            <label class="count-add2">
+                                <div class="count-add1-base">
+                                    <input type="checkbox" onchange="calculatePrice()" value="699"
+                                        class="count-add1-base-input" data-name="小木林香氛大豆蠟燭">
+                                    <div>
+                                        <p class="count-add1-base-text1">加購：北歐森林大豆香氛蠟燭</p>
+                                        <p class="count-add1-base-text2">無煙環保環保配方 200g</p>
+                                    </div>
+                                </div>
+                                <span>+ NT$ 699</span>
+                            </label>
+
+                            <!-- 加購選項 C -->
+                            <label class="count-add3">
+                                <div class="count-add1-base">
+                                    <input type="checkbox" onchange="calculatePrice()" value="199"
+                                        class="count-add1-base-input" data-name="手作針織杯墊">
+                                    <div>
+                                        <p class="count-add1-base-text1">加購：暖色系純棉針織杯墊</p>
+                                        <p class="count-add1-base-text2">吸水隔熱 桌邊最美擺飾</p>
+                                    </div>
+                                </div>
+                                <span>+ NT$ 199</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 右半部：動態即時結帳卡片 (5個柵格) -->
+                    <div class="price-count-right">
+                        <div class="price-count-all smoove">
+
+                            <h3>結帳金額估算</h3>
+
+                            <!-- 細項明細 -->
+                            <div class="price-count-spacpt">
+                                <div class="price-count-spacpt-880">
+                                    <span>雲朵抱枕基本款</span>
+                                    <p>NT$ 880</p>
+                                </div>
+                                <div class="price-count-spacpt-0">
+                                    <span>加購商品小計</span>
+                                    <p>NT$ 0</p>
+                                </div>
+                                <div class="price-count-spacpt-c0">
+                                    <span>限時多件優惠</span>
+                                    <p>折抵 NT$ 0</span>
+                                </div>
+                            </div>
+
+                            <hr class="borde4">
+
+                            <!-- 即時更新的總金額 -->
+                            <div class="price-count-jusne">
+                                <span class="jusne-span">預估結帳總價</span>
+                                <div class="price-count-jusne-money">
+                                    <span>880</span>
+                                    <p>元</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 簡單的聯絡結帳表單 -->
+                        <div class="price-countant">
+                            <input id="user-phone" type="tel" placeholder="請輸入收件人手機號碼" class="countant-phone">
+                            <button onclick="submitOrder()" class="countant-button">
+                                送出預訂享優惠
+                            </button>
+                            <p>※ 送出預訂後，專員將於 24 小時內與您聯繫配送細節。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常見問題與售後保障 -->
+        <section id="question">
+            <div class="question-all smoove">
+                <div class="question-all-title">
+                    <p>常見問題與售後保障</p>
+                    <span>解除你的疑惑，我們提供最令人安心的售後服務。</span>
+                </div>
+                <div class="question-all-text">
+                    <details class="question-details">
+                        <summary>Q1.針織抱枕可以放進洗衣機直接清洗嗎?</summary>
+                        可以的！請將抱枕放入「細網洗衣袋」中，並選擇洗衣機的「柔洗/羊毛」模式，
+                        使用冷水搭配中性溫和洗劑。清洗完畢後，請放置於陰涼處平鋪陰乾，避免高溫烘乾以防止縮水。
+                    </details>
+                    <details class="question-details">
+                        <summary>Q2.手作產品如果不滿意，退換貨的時限是多少?</summary>
+                        我們提供極具信心的 **7 天鑑賞期**。在收到商品的 7 天內，只要產品保持全新、未經洗滌、標籤未拆剪且包裝完整，
+                        我們均提供無條件的退換貨服務，運費由我們全額全負擔。
+                    </details>
+                    <details class="question-details">
+                        <summary>Q3.加購活動組的配送時間需要多久?</summary>
+                        收到您的自由配訂單後，我們的客服專員會在 24 小時內發送簡訊或致電向您確認配送細節。
+                        確認無誤後，現貨商品將於 2~3 個工作天內，透過宅配或超商送達您的手中。
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- 電子信箱 -->
+        <section id="email">
+            <div class="email-all smoove">
+                <div class="email-title">
+                    <h4>需要專人諮詢，或是索取企業合作優惠？</h4>
+                    <p>留下您的 Email，我們將在最短時間內發送最溫暖的品牌介紹與優惠方案給您。</p>
+                </div>
+                <div class="email-box">
+                    <input id="email" type="email" placeholder="您的電子信箱" class="email">
+                    <button onclick="submitOrder()" class="email-button">
+                        免費諮詢
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav id="footer">
+            <ul class="footer-ul">
+                <div class="footer-company_name">
+                    <!--公司名稱，也可以用div-->
+                    <h3>MELLOW HOME</h3>
+                    <p>我們堅持手作的溫暖、天然的原料、極簡的美學，致力於為您的日常生活增添質感與溫馨氛圍。</p>
+                </div>
+                <li class="footer-contant">
+                    <span>聯絡暖煦</span>
+                    <!-- 直選單ul>li*3>a -->
+                    <ul>
+                        <li><a href="">服務時間：週一至週五 09:00 - 18:00</a></li>
+                        <li><a href="">聯絡電話：07-1234567</a></li>
+                        <li><a href="">公司地址：高雄市大寮區捷運大道1號 (高雄大寮捷運站旁)</a></li>
+                    </ul>
+                </li>
+                <li class="footer-information">
+                    <span>快速資訊</span>
+                    <ul>
+                        <small>Copyright &copy; Mellow Home 暖煦家居.</small>
+                        <li><a href="">本網頁為蘇于涵設計師之求職作品展示，部分圖片取自 Unsplash 免版權圖庫，僅供學術與履歷作品展示用途。</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </footer>
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- jquery smoove cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
+    <!-- 自訂的js一定要放在最下面，因為要最後執行 -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
